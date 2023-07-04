@@ -1,4 +1,4 @@
-# anzmmc-packaged-poc
+# poc-accelerate
 
 ***[WORK IN PROGRESS]***
 

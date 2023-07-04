@@ -43,17 +43,17 @@ variable "de_database_name" {
   default = "customer_sales"
 }
 
-variable "git_pat" {
-  description = "Github personal access token"
-}
+# variable "git_pat" {
+#   description = "Github personal access token"
+# }
 
-variable "git_user" {
-  description = "git user"
-}
+# variable "git_user" {
+#   description = "git user"
+# }
 
 variable "git_url" {
   description = "url for the git repo"
-  default = "https://github.com/databricks/anzmmc-packaged-poc"
+  default = "https://github.com/renjil/databricks-poc-accelerate"
 }
 
 variable "git_branch" {
@@ -66,7 +66,7 @@ variable "git_provider" {
 }
 
 variable "repo_name" {
-    default = "anzmmc-packaged-poc"
+    default = "databricks-poc-accelerate"
 }
 
 variable "job_email_notification" {

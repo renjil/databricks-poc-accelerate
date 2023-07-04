@@ -29,7 +29,7 @@ sql_cluster_size = "2X-Small"
 catalog_name           = "poc_accelerate"
 de_database_name          = "synthetic_db"
 job_email_notification = "john.doe@databricks.com"
-git_url                = "https://github.com/databricks/anzmmc-packaged-poc"
+git_url                = "https://github.com/renjil/databricks-poc-accelerate"
 git_pat = "xxxxxxxx"
 git_user = "john.doe@github.com"
 ```

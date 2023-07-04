@@ -10,13 +10,13 @@ variable "catalog_name" {
   description = "name of the catalog"
 }
 
-variable "git_pat" {
-  description = "Github personal access token"
-}
+# variable "git_pat" {
+#   description = "Github personal access token"
+# }
 
-variable "git_user" {
-  description = "git user"
-}
+# variable "git_user" {
+#   description = "git user"
+# }
 
 variable "git_url" {
   description = "url for the git repo"

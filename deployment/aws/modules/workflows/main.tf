@@ -18,11 +18,11 @@ module "data_setup" {
     de_database_name        = var.de_database_name
 
     # Git and Repos
-    git_user = var.git_user
-    git_url = var.git_url
+    # git_user = var.git_user
+    # git_url = var.git_url
     git_branch = var.git_branch
     git_provider = var.git_provider
-    git_pat = var.git_pat
+    # git_pat = var.git_pat
     repo_path               = "/Repos/${data.databricks_current_user.me.user_name}/${var.project_name}"
 
     # Infrastucture
@@ -49,11 +49,11 @@ module "ml" {
     catalog_name = var.catalog_name
 
     # Git and Repos
-    git_user = var.git_user
-    git_url = var.git_url
-    git_branch = var.git_branch
-    git_provider = var.git_provider
-    git_pat = var.git_pat
+    # git_user = var.git_user
+    # git_url = var.git_url
+    # git_branch = var.git_branch
+    # git_provider = var.git_provider
+    # git_pat = var.git_pat
     repo_path               = "/Repos/${data.databricks_current_user.me.user_name}/${var.project_name}"
 
     # Infrastucture
@@ -82,11 +82,11 @@ module "de" {
     de_database_name        = var.de_database_name
 
     # Git and Repos
-    git_user = var.git_user
-    git_url = var.git_url
-    git_branch = var.git_branch
-    git_provider = var.git_provider
-    git_pat = var.git_pat
+    # git_user = var.git_user
+    # git_url = var.git_url
+    # git_branch = var.git_branch
+    # git_provider = var.git_provider
+    # git_pat = var.git_pat
     repo_path               = "/Repos/${data.databricks_current_user.me.user_name}/${var.project_name}"
 
     # Infrastucture
@@ -117,11 +117,11 @@ module "e2e" {
     de_database_name        = var.de_database_name
 
     # Git and Repos
-    git_user = var.git_user
-    git_url = var.git_url
-    git_branch = var.git_branch
-    git_provider = var.git_provider
-    git_pat = var.git_pat
+    # git_user = var.git_user
+    # git_url = var.git_url
+    # git_branch = var.git_branch
+    # git_provider = var.git_provider
+    # git_pat = var.git_pat
     repo_path               = "/Repos/${data.databricks_current_user.me.user_name}/${var.project_name}"
 
     # Infrastucture

@@ -78,13 +78,13 @@ variable "de_database_name" {
   default = "customer_sales"
 }
 
-variable "git_pat" {
-  description = "Github personal access token"
-}
+# variable "git_pat" {
+#   description = "Github personal access token"
+# }
 
-variable "git_user" {
-  description = "git user"
-}
+# variable "git_user" {
+#   description = "git user"
+# }
 
 variable "git_url" {
   description = "url for the git repo"

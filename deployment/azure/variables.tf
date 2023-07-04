@@ -44,6 +44,6 @@ variable "job_email_notification" {
 }
 
 variable "git_url" {
-  default = "https://github.com/databricks/anzmmc-packaged-poc"
+  default = "https://github.com/renjil/databricks-poc-accelerate"
 }
 

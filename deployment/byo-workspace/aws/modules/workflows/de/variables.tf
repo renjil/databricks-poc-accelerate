@@ -6,27 +6,27 @@ variable "tags" {
   description = "tags to apply to resources"
 }
 
-variable "git_provider" {
-  description = "git provider"
-  default = "github"
-}
+# variable "git_provider" {
+#   description = "git provider"
+#   default = "github"
+# }
 
-variable "git_branch" {
-  description = "git branch"
-  default = "main"
-}
+# variable "git_branch" {
+#   description = "git branch"
+#   default = "main"
+# }
 
-variable "git_url" {
-  description = "url for the git repo"
-}
+# variable "git_url" {
+#   description = "url for the git repo"
+# }
 
-variable "git_user" {
-  description = "git user"
-}
+# variable "git_user" {
+#   description = "git user"
+# }
 
-variable "git_pat" {
-  description = "Github personal access token"
-}
+# variable "git_pat" {
+#   description = "Github personal access token"
+# }
 
 variable "repo_path" {
   description = "path to the repo"

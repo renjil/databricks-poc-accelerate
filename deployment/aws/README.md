@@ -18,7 +18,7 @@ aws_secret_key = "XXXXX/2KU3AYaueBzfJQeiXFqhE6"
 aws_account_id = "123456789"
 
 # Git
-git_url  = "https://github.com/databricks/anzmmc-packaged-poc"
+git_url  = "https://github.com/renjil/databricks-poc-accelerate"
 git_pat  = "XX"
 git_user = "john.doe@doe.com"
 ```

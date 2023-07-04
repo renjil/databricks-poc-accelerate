@@ -18,8 +18,8 @@ module "workflows" {
 
   # Generally applicable
   dev_cluster_id         = module.compute.all_purpose_id
-  git_pat                = var.git_pat
-  git_user               = var.git_user
+  # git_pat                = var.git_pat
+  # git_user               = var.git_user
   git_url                = var.git_url
   git_branch             = var.git_branch 
   git_provider           = var.git_provider
