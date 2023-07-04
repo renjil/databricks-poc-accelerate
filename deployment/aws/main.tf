@@ -37,14 +37,14 @@ module "workflows" {
 
   # Generally applicable
   dev_cluster_id         = module.compute.all_purpose_id
-  git_pat                = var.git_pat
-  git_user               = var.git_user
+  # git_pat                = var.git_pat
+  # git_user               = var.git_user
   git_url                = var.git_url
   git_branch             = var.git_branch 
   git_provider           = var.git_provider
 
-  db_host = coalesce(module.aws_ws.databricks_host, var.db_host)
-  db_token = coalesce(module.aws_ws.databricks_token, var.db_token)
+  db_host = module.aws_ws.databricks_host
+  db_token = module.aws_ws.databricks_token
 
 }
 
@@ -57,8 +57,9 @@ module "compute" {
   tags                         = tomap({"project" = var.project_name}) 
 
   sql_cluster_size             = var.sql_cluster_size
-  db_host                      = coalesce(module.aws_ws.databricks_host, var.db_host)
-  db_token                     = coalesce(module.aws_ws.databricks_token, var.db_token)
+
+  db_host  = module.aws_ws.databricks_host
+  db_token = module.aws_ws.databricks_token
 }
 
 module "queries" {
@@ -69,8 +70,9 @@ module "queries" {
   sql_warehouse_data_source_id = module.compute.sql_warehouse_id
   catalog_name                 = "${var.project_name}_${random_pet.this.id}_catalog"
   de_database_name             = var.de_database_name
-  db_host                      = coalesce(module.aws_ws.databricks_host, var.db_host)
-  db_token                     = coalesce(module.aws_ws.databricks_token, var.db_token)
+  
+  db_host  = module.aws_ws.databricks_host
+  db_token = module.aws_ws.databricks_token
 }
 
 output "databricks_host" {

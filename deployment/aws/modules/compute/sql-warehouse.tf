@@ -3,7 +3,7 @@ resource "databricks_sql_endpoint" "warehouse" {
   cluster_size     = var.sql_cluster_size
   max_num_clusters = 1
   auto_stop_mins   = var.autotermination_minutes
-  warehouse_type   = "PRO"
+  enable_serverless_compute = true
 
   tags {
     custom_tags {

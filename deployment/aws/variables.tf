@@ -88,6 +88,7 @@ variable "de_database_name" {
 
 variable "git_url" {
   description = "url for the git repo"
+  default = "https://github.com/renjil/databricks-poc-accelerate"
 }
 
 variable "git_branch" {
