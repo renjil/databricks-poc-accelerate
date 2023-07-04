@@ -69,6 +69,6 @@ variable "repo_name" {
     default = "databricks-poc-accelerate"
 }
 
-variable "job_email_notification" {
-  description = "email notification for job success/failures"
-}
+# variable "job_email_notification" {
+#   description = "email notification for job success/failures"
+# }
