@@ -1,5 +1,5 @@
 resource "databricks_job" "synthetic_data_setup_repos" {
-  name = "${var.project_name} - Synthetic Data Setup Job (Repos source)"
+  name = "${var.project_name} - Synthetic Data Setup Job"
   max_concurrent_runs = 1
   timeout_seconds = 86400
   tags = var.tags
