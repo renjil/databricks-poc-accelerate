@@ -1,0 +1,1 @@
+terraform apply -var-file="db.tfvars" -auto-approve  

@@ -1,0 +1,12 @@
+mlflow_params:
+  model_name: 'property_value_rf' 
+  experiment_name: 'property_value_model_deployment'
+model_comparison_params:
+  metric: 'r2_score'
+  higher_is_better: True
+compare_models: True
+data_input:
+  reference_set:
+    schema: 'california_property'
+    table: 'holdout_set'
+  label_col: 'MedHouseVal'

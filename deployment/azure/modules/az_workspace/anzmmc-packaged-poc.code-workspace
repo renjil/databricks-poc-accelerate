@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"name": "terraform-databricks-examples",
+			"path": "../../../../../terraform-databricks-examples"
+		},
+		{
+			"path": "../../../../../Documents/vscode/databricks/az_poc_accelerate"
+		}
+	],
+	"settings": {}
+}

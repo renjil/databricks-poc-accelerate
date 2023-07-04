@@ -1,0 +1,1 @@
+terraform plan -var-file="db.tfvars" -out="db.tfplan"

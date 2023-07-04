@@ -1,0 +1,17 @@
+mlflow_params:
+  model_name: 'property_value_rf'
+  run_name: 'random_forest'
+  experiment_name: 'property_value_model_training'
+preproc_params:
+  test_size: 0.33
+  random_state: 42
+model_params:
+  n_estimators: 150
+  max_depth: 44
+  min_samples_leaf: 1
+  random_state: 206
+data_input:
+  training_set:
+    schema: 'california_property'
+    table: 'training_set'
+  label_col: 'MedHouseVal'
