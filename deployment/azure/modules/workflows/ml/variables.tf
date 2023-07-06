@@ -23,14 +23,6 @@ variable "git_branch" {
   default = "main"
 }
 
-variable "git_user" {
-  description = "git user"
-}
-
-variable "git_pat" {
-  description = "Github personal access token"
-}
-
 variable "job_email_notification" {
     description = "email address for job notifications"
 }

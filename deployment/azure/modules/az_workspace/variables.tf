@@ -1,13 +1,14 @@
-#variable "azure_account_id" {}
-variable "databricks_account_username" {}
-
 locals {
   dbfsname = join("", [var.dbfs_prefix, "${random_string.naming.result}"]) // dbfs name must not have special chars
   prefix = "poc-accelerate-${random_string.naming.result}"
   dlsprefix = "pocaccelerate${random_string.naming.result}"
   tags = {
-    Owner = var.databricks_account_username
+    owner = var.owner
   }
+}
+
+variable "owner" {
+  description = "used for resource tagging"
 }
 
 variable "tags" {

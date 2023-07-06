@@ -5,7 +5,7 @@
 touch db.tfvars
 ```
 
-## Add below configs to the tfvar file
+## Add below configs to the tfvar file (AWS)
 ```
 databricks_account_username = "john.doe@databricks.com"
 databricks_account_password = "supersecretpassword"
@@ -34,6 +34,11 @@ git_pat = "xxxxxxxx"
 git_user = "john.doe@github.com"
 ```
 
+## Add below configs to the .tfvars file (AZURE)
+job_email_notification = "myuser@databricks.com"
+project_name = "poc"
+owner = "myuser@databricks.com"
+```
 
 ## First initialize terraform
 

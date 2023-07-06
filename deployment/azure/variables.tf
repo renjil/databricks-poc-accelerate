@@ -1,9 +1,17 @@
-variable "databricks_account_username" {}
-variable "git_user" {}
-variable "git_pat" {}
+#variable "workspace_url" {}
+#variable "workspace_id" {}
+
+variable "owner" {
+  description = "Used for tagging of cloud resources"
+}
 
 variable "runtime_engine" {
   default = "PHOTON"
+}
+
+variable "cluster_security_mode" {
+  default = "SINGLE_USER"
+  description = "Unity Catalog access mode"
 }
 
 variable "autotermination_minutes" {
@@ -18,32 +26,41 @@ variable "max_workers" {
   default = 2
 }
 
-variable "cluster_security_mode" {
-  default     = "SINGLE_USER"
-  description = "Unity Catalog access mode"
-}
-
 variable "sql_cluster_size" {
   default = "2X-Small"
 }
 
-variable "data_storage_path" {
-  default = "poc-accelerate-data"
+variable "node_type_id" {
+  default = "i3.xlarge"
 }
 
-variable "catalog_name" {
-  default = "poc_accelerate"
+variable "project_name" {
+  description = "name of the project. Use snake_case, no spaces or hyphens allowed."
 }
 
-variable "database_name" {
-  default = "synthetic_db"
-}
-
-variable "job_email_notification" {
-  default = "brendan.forbes@databricks.com"
+variable "de_database_name" {
+  description = "name of the database"
+  default = "customer_sales"
 }
 
 variable "git_url" {
+  description = "url for the git repo"
   default = "https://github.com/renjil/databricks-poc-accelerate"
 }
 
+variable "git_branch" {
+  default = "main"
+}
+
+variable "git_provider" {
+  description = "git provider"
+  default = "github"
+}
+
+variable "repo_name" {
+    default = "databricks-poc-accelerate"
+}
+
+variable "job_email_notification" {
+  description = "email notification for job success/failures"
+}

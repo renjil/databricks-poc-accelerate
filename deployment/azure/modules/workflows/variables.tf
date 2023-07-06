@@ -1,55 +1,33 @@
-#abfss://container@storageAccount.dfs.core.windows.net
-locals {
-  adls_storage = "abfss://${var.adls_storage_container}@${var.adls_storage_account}.dfs.core.windows.net"
-}
-
-variable "latest_lts" {}
-variable "node_type" {}
-
-variable "adls_storage_account" {
-}
-
-variable "adls_storage_container" {
-}
-
-variable "runtime_engine" {
-  description = "enable photon on a cluster"
-}
-
-variable "cluster_security_mode" {
-  description = "Unity Catalog access mode"
-}
-
-variable "data_storage_path"{
-  default = "poc-accelerate-data"
-  description = "path to source data"
-}
+variable "spark_version" {}
+variable "node_type_id" {}
 
 variable "catalog_name" {
   description = "name of the catalog"
-}
-
-variable "database_name" {
-  description = "name of the database"
-}
-
-variable "job_email_notification" {
-  description = "email address for job notifications"
-}
-
-variable "git_pat" {
-  description = "Github personal access token"
-}
-
-variable "git_user" {
-  description = "git user"
 }
 
 variable "git_url" {
   description = "url for the git repo"
 }
 
-variable "target_database" {
-  default = "poc"
+variable "git_provider" {
+  description = "git provider"
+  default = "github"
+}
+
+variable "git_branch" {
+  description = "git branch"
+  default = "main"
+}
+
+variable "project_name" {
+  description = "name of the project"
+}
+
+variable "de_database_name" {
+  description = "name of the database"
+}
+
+variable "dev_cluster_id" {
+  description = "existing cluster id used to run workflows in dev mode. These should be changed to job clusters in production."
 }
 

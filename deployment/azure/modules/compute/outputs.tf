@@ -1,5 +1,5 @@
-output "az_all_purpose_id" {
-    value = databricks_cluster.az.id
+output "all_purpose_id" {
+    value = databricks_cluster.dev.id
     description = "POC Accelerate Interactive Cluster"
 }
 
